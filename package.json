@@ -9,6 +9,7 @@
   "scripts": {
     "report:install": "rm -rf node_modules && echo \"\n\" > package-lock.json && echo \"$ npm i\" > reports/install.log && npm i >> reports/install.log",
     "report:todo": "grep --exclude-dir=.git --exclude-dir=_book --exclude-dir=assets --exclude-dir=node_modules --exclude-dir=reports --exclude-dir=coverage --exclude-dir=docs -rEI \"TODO|FIXME\" . > reports/TODO.txt",
+    "serve": "http-server assets",
     "test": "mocha tests"
   },
   "repository": {
@@ -30,5 +31,9 @@
   "bugs": {
     "url": "https://github.com/FabricLabs/labs.fabric.pub/issues"
   },
-  "homepage": "https://github.com/FabricLabs/labs.fabric.pub#readme"
+  "homepage": "https://github.com/FabricLabs/labs.fabric.pub#readme",
+  "devDependencies": {
+    "http-server": "14.1.1",
+    "mocha": "10.2.0"
+  }
 }

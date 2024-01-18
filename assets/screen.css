@@ -4,6 +4,15 @@ html, body {
   font-family: 'Martian Mono';
 }
 
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+a, a:visited {
+  color: #ababab;
+}
+
 .splash {
   text-align: center;
   margin-left: auto;

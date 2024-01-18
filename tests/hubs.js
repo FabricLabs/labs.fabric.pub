@@ -10,6 +10,7 @@ const HUBS = [
   'https://hub.fabric.pub'
 ];
 
+// Tests
 describe('Fabric Hubs', function () {
   describe('Hub', function () {
     it('is a function', function () {
@@ -24,7 +25,7 @@ describe('Fabric Hubs', function () {
     });
   });
 
-  describe('Sensemaker', function () {
+  describe('sensemaker.io', function () {
     it('is accessible', async function () {
       const result = await fetch(`https://sensemaker.io/`);
       assert.strictEqual(result.status, 200);
