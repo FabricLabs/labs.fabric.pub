@@ -1,0 +1,34 @@
+{
+  "name": "labs.fabric.pub",
+  "version": "0.1.0",
+  "description": "Fabric Labs",
+  "main": "services/Labs.js",
+  "dependencies": {
+    "@fabric/core": "FabricLabs/fabric"
+  },
+  "scripts": {
+    "report:install": "rm -rf node_modules && echo \"\n\" > package-lock.json && echo \"$ npm i\" > reports/install.log && npm i >> reports/install.log",
+    "report:todo": "grep --exclude-dir=.git --exclude-dir=_book --exclude-dir=assets --exclude-dir=node_modules --exclude-dir=reports --exclude-dir=coverage --exclude-dir=docs -rEI \"TODO|FIXME\" . > reports/TODO.txt",
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabricLabs/labs.fabric.pub.git"
+  },
+  "keywords": [
+    "fabric",
+    "bitcoin",
+    "lightning",
+    "dapp",
+    "p2p",
+    "peer",
+    "to",
+    "peer"
+  ],
+  "author": "Fabric Labs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FabricLabs/labs.fabric.pub/issues"
+  },
+  "homepage": "https://github.com/FabricLabs/labs.fabric.pub#readme"
+}
