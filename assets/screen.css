@@ -1,5 +1,26 @@
 html, body {
-  background: #000;
-  color: #fff;
+  background: #161616;
+  color: #ababab;
   font-family: 'Martian Mono';
+}
+
+.splash {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10em;
+}
+
+.left.floated {
+  float: left;
+}
+
+img.left.floated {
+  margin-right: 1em;
+}
+
+img.small {
+  max-height: 12em;
+  max-width: 12em;
+  margin: 2em;
 }
